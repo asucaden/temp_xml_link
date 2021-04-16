@@ -16,7 +16,7 @@
     <Website facebook="https://www.facebook.com/MochileroKitchenAZ">"https://mochilerokitchen.com"</Website>
   </Restaurant>
 
-  <Restaurant Delivery="Y">
+  <Restaurant>
     <Name>="Board and Brew"</Name>
     <Contact>
       <Phone>"480-781-2900"</Phone>
