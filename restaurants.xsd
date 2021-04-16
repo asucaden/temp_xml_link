@@ -1,33 +1,39 @@
 <?xml version="1.0"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:element name="Restaurants">
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Phone" type="xs:string"/>
+  <xs:element name="Email" type="xs:string"/>
+  <xs:element name="Name" type="xs:string"/>
+  <xs:element name="Contact">
     <xs:complexType>
       <xs:sequence>
-        <xs:element name="Restaurant" maxOccurs="unbounded">
-          <xs:complexType>
-	    <xs:sequence>
-	      <xs:element name="Name" type="string"/>
-              <xs:element name="Contact" type="string"/>
-	        <xs:complexType>
-		  <xs:sequence>
-  		    <xs:element name="Phone" type="string"/>
-		    <xs:element name="Email" type="string"/>
-		  </xs:sequence>
-		</xs:complexType>
-	      <xs:element name=Website>
-                <xs:complexType>
-                  <xs:simpleContent>
-                    <xs:extension base="xs:string">
-                      <xs:attribute name="facebook" type="xs:string" />
-                    </xs:extension>
-                  </xs:simpleContent>
-                </xs:complexType>
- 	        <xs:attribute name="facebook" type="string"/>
-	      </xs:element>
-            </xs:sequence>
-            <xs:attribute name="Delivery" minOccurs="1"/>
-	  </xs:complexType>
-        </xs:element>
+        <xs:element ref="Phone"/>
+        <xs:element ref="Email"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Website">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute type="xs:string" name="facebook" use="optional"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Restaurant">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Name"/>
+        <xs:element ref="Contact"/>
+        <xs:element ref="Website"/>
+      </xs:sequence>
+      <xs:attribute type="xs:string" name="Delivery" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="restaurants">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Restaurant" maxOccurs="unbounded" minOccurs="0"/>
       </xs:sequence>
     </xs:complexType>
   </xs:element>
