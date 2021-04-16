@@ -27,7 +27,7 @@
         <xs:element ref="Contact"/>
         <xs:element ref="Website"/>
       </xs:sequence>
-      <xs:attribute type="xs:string" name="Delivery" use="optional"/>
+      <xs:attribute type="xs:string" name="Delivery" use="required"/>
     </xs:complexType>
   </xs:element>
   <xs:element name="restaurants">
