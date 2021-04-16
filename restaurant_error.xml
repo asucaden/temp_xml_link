@@ -1,0 +1,45 @@
+<restaurants>
+  
+  <Restaurant Delivery="Y">
+    <Name>="Original ChopShop"</Name>
+    <Contact>
+      <Phone>"480-307-9336"</Phone>
+    </Contact>
+    <Website facebook="https://www.facebook.com/OriginalChopShop">"https://originalchopshop.com"</Website>
+  </Restaurant>
+
+  <Restaurant Delivery="N">
+    <Contact>
+      <Phone>"623-440-5588"</Phone>
+      <Email>"feedback@mochilerokitchen.com"</Email>
+    </Contact>
+    <Website facebook="https://www.facebook.com/MochileroKitchenAZ">"https://mochilerokitchen.com"</Website>
+  </Restaurant>
+
+  <Restaurant Delivery="Y">
+    <Name>="Board and Brew"</Name>
+    <Contact>
+      <Phone>"480-781-2900"</Phone>
+      <Email>"info@boardandbrew.com"</Email>
+    </Contact>
+    <Website facebook="https://www.facebook.com/boardnbrew">"https://boardandbrew.com"</Website>
+  </Restaurant>
+
+  <Restaurant Delivery="N">
+    <Name>="Thai Basil"</Name>
+    <Contact>
+      <Phone>"480-513-7471"</Phone>
+      <Email>"info@thaibasilaz.com"</Email>
+    </Contact>
+    <Website>"https://www.thaibasilaz.com"</Website>
+  </Restaurant>
+
+  <Restaurant Delivery="N">
+    <Name>="Los Favoritos"</Name>
+    <Contact>
+      <Phone>"480-966-0535"</Phone>
+      <Email>"info@losfavs.com"</Email>
+    </Contact>
+    <Website facebook="https://www.facebook.com/losfavs5">"https://www.losfavs.com"</Website>
+  </Restaurant>
+</restaurants>
