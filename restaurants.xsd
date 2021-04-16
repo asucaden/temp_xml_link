@@ -21,7 +21,7 @@
                     </xs:extension>
                   </xs:simpleContent>
                 </xs:complexType>
- 	        <xs:attribute name="facebook" type="string" 
+ 	        <xs:attribute name="facebook" type="string"/>
 	      </xs:element>
             </xs:sequence>
             <xs:attribute name="Delivery" minOccurs="1"/>
